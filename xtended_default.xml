@@ -16,13 +16,13 @@
 	  fetch="https://github.com/LineageOS" />
 
   <!-- General Repos -->
-  <project path="manifest" name="manifest" remote="xtended" />
-  <project path="art" name="art" remote="xtended" />
-  <project path="bionic" name="bionic" remote="xtended" />
-  <project path="bootable/recovery" name="bootable_recovery" remote="xtended" />
+  <project path="manifest" name="manifest" remote="xtended" revision="xq-dev" />
+  <project path="art" name="art" remote="xtended" revision="xq-dev" />
+  <project path="bionic" name="bionic" remote="xtended" revision="xq-dev" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="xtended" revision="xq-dev" />
 
   <!-- Build Repos -->
-  <project path="build/make" name="build" remote="xtended" >
+  <project path="build/make" name="build" remote="xtended" revision="xq-dev">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -31,20 +31,20 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong"  remote="xtended" >
+  <project path="build/soong" name="build_soong"  remote="xtended" revision="xq-dev" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="build/blueprint" name="build_blueprint" groups="pdk,tradefed" remote="xtended" />
 
   <!-- Framework Repos -->
-  <project path="frameworks/av" name="frameworks_av" remote="xtended" />
-  <project path="frameworks/base" name="frameworks_base" remote="xtended" />
-  <project path="frameworks/native" name="frameworks_native" remote="xtended" />
+  <project path="frameworks/av" name="frameworks_av" remote="xtended" revision="xq-dev" />
+  <project path="frameworks/base" name="frameworks_base" remote="xtended" revision="xq-dev" />
+  <project path="frameworks/native" name="frameworks_native" remote="xtended" revision="xq-dev" />
   <project path="frameworks/rs" name="frameworks_rs" remote="xtended" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="xtended" />
-  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="xtended" />
-  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="xtended" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="xtended" revision="xq-dev" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="xtended" revision="xq-dev" />
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="xtended" revision="xq-dev" />
 
   <!-- Device Repos -->
   <project path="device/xtended/sepolicy" name="device_xtended_sepolicy" remote="xtended" />
@@ -53,59 +53,59 @@
 
   
   <!-- Hardware Repos -->
-  <project path="hardware/libhardware" name="hardware_libhardware" remote="xtended" />
-  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="xtended" />
-  <project path="hardware/interfaces" name="hardware_interfaces" remote="xtended" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="xtended" revision="xq-dev" />
+  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="xtended" revision="xq-dev" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="xtended" revision="xq-dev" />
   <project path="hardware/xtended/interfaces" name="hardware_xtended_interfaces" remote="xtended" />
-  <project path="hardware/ril" name="hardware_ril" remote="xtended" />
+  <project path="hardware/ril" name="hardware_ril" remote="xtended" revision="xq-dev" />
 
   <!-- External repos -->
-  <project path="external/skia" name="external_skia" remote="xtended" />
-  <project path="external/selinux" name="external_selinux" remote="xtended" />
-  <project path="external/sqlite" name="external_sqlite" remote="xtended" />
+  <project path="external/skia" name="external_skia" remote="xtended" revision="xq-dev" />
+  <project path="external/selinux" name="external_selinux" remote="xtended" revision="xq-dev" />
+  <project path="external/sqlite" name="external_sqlite" remote="xtended" revision="xq-dev" />
   <project path="external/tinycompress" name="external_tinycompress" remote="xtended" />
   <project path="external/exfat" name="external_exfat" remote="xtended" />
   <project path="external/ntfs-3g" name="external_ntfs-3g" remote="xtended" />
   <project path="external/e2fsprogs" name="external_e2fsprogs" remote="xtended" />
 
   <!-- Packages Repos -->
-  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="xtended" />
-  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="xtended" />
-  <project path="packages/apps/CertInstaller" name="packages_apps_CertInstaller" remote="xtended" />
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="xtended" revision="xq-dev" />
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="xtended" revision="xq-dev" />
+  <project path="packages/apps/CertInstaller" name="packages_apps_CertInstaller" remote="xtended" revision="xq-dev" />
   <project path="packages/apps/CustomDoze" name="packages_apps_CustomDoze" remote="xtended" />
-  <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="xtended" />
-  <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="xtended" />
-  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="xtended" /> 
+  <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="xtended" revision="xq-dev" />
+  <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="xtended" revision="xq-dev" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="xtended" revision="xq-dev" /> 
   <project path="packages/apps/Eleven" name="packages_apps_Eleven" remote="xtended" /> 
-  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="xtended"/>
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="xtended" revision="xq-dev"/>
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="xtended" />
   <project path="packages/apps/MusicFX" name="packages_apps_MusicFX" remote="xtended" />
-  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="xtended" />
-  <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="xtended" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings"  remote="xtended" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="xtended" revision="xq-dev" />
+  <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" remote="xtended" revision="xq-dev" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings"  remote="xtended" revision="xq-dev" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="xtended" />
   <project path="packages/apps/Snap" name="packages_apps_Snap"  remote="xtended" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="xtended" />
-  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="xtended" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="xtended" revision="xq-dev" />
   <project path="packages/apps/Xtensions" name="packages_apps_Xtensions" remote="xtended"/>
   <project path="packages/apps/Recorder" name="packages_apps_Recorder" remote="xtended"/>
-  <project path="packages/providers/ContactsProvider" name="packages_providers_ContactsProvider" remote="xtended" />
-  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="xtended" />
-  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="xtended" />
-  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="xtended" />
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="xtended" />
+  <project path="packages/providers/ContactsProvider" name="packages_providers_ContactsProvider" remote="xtended" revision="xq-dev" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="xtended" revision="xq-dev" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="xtended" revision="xq-dev" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="xtended" revision="xq-dev" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="xtended" revision="xq-dev" />
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="xtended" />
-  <project path="packages/apps/Traceur" name="packages_apps_Traceur" groups="pdk-fs" remote="xtended" />
+  <project path="packages/apps/Traceur" name="packages_apps_Traceur" groups="pdk-fs" remote="xtended" revision="xq-dev" />
 
   <!-- System Repos -->
-  <project path="system/bt" name="system_bt" remote="xtended" />
-  <project path="system/core" name="system_core" remote="xtended" />
-  <project path="system/libhidl" name="system_libhidl" remote="xtended" />
-  <project path="system/media" name="system_media" remote="xtended" />
-  <project path="system/netd" name="system_netd" remote="xtended" />
-  <project path="system/sepolicy" name="system_sepolicy" remote="xtended" />
-  <project path="system/update_engine" name="system_update_engine" remote="xtended" /> 
-  <project path="system/vold" name="system_vold" remote="xtended" />
+  <project path="system/bt" name="system_bt" remote="xtended" revision="xq-dev" />
+  <project path="system/core" name="system_core" remote="xtended" revision="xq-dev" />
+  <project path="system/libhidl" name="system_libhidl" remote="xtended" revision="xq-dev" />
+  <project path="system/media" name="system_media" remote="xtended" revision="xq-dev" />
+  <project path="system/netd" name="system_netd" remote="xtended" revision="xq-dev" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="xtended" revision="xq-dev"  />
+  <project path="system/update_engine" name="system_update_engine" remote="xtended" revision="xq-dev" /> 
+  <project path="system/vold" name="system_vold" remote="xtended" revision="xq-dev" />
   <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="lineage" revision="lineage-17.0" />
 
   <!-- Vendor Repo -->
